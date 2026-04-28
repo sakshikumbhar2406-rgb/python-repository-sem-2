@@ -1,0 +1,54 @@
+#Step 1:Create and write to a file
+file_name = "course_outcomes.txt"
+
+with open(file_name,"w")as file:
+  file.write("Course Outcomes(COs):\n")
+  file.write("1.Understand the basics of python programming.\n")
+  file.write("2.Apply loops,functions,and data structures.\n")
+  file.write("3.Handle files and perform basic l/O operations.\n")
+  file.write("4.Solve programming problems using logic and algorithms.\n")
+  file.write("5.Develop small projects using Python.\n")
+
+print(f"Data written to {file_name}successfully.\n")
+
+#Step 2:Read the file content
+print("Reading file content:")
+with open(file_name,"r")as file:
+  content = file.read()
+  print(content)
+
+#Step3:Append a new course outcome
+with open(file_name,"a")as file:
+  file.write("6.Gain uderstanding of basic software development practices.\n")
+
+print("After appending a new course outcome:")
+with open(file_name,"r")as file:
+  content = file.read()
+  print(content)
+
+#Step 4: Count number of lines in the file
+with open(file_name,"r")as file:
+  lines = file.readlines()
+print("Number of course outcomes(lines):",len(lines)-1)#excluding heading line
+
+Output:-Data written to course_outcomes.txtsuccessfully.
+
+Reading file content:
+Course Outcomes(COs):
+1.Understand the basics of python programming.
+2.Apply loops,functions,and data structures.
+3.Handle files and perform basic l/O operations.
+4.Solve programming problems using logic and algorithms.
+5.Develop small projects using Python.
+
+After appending a new course outcome:
+Course Outcomes(COs):
+1.Understand the basics of python programming.
+2.Apply loops,functions,and data structures.
+3.Handle files and perform basic l/O operations.
+4.Solve programming problems using logic and algorithms.
+5.Develop small projects using Python.
+6.Gain uderstanding of basic software development practices.
+
+Number of course outcomes(lines): 6
+
