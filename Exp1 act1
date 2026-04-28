@@ -1,0 +1,16 @@
+#Define a fuction
+# 'personal_details'.
+
+def personal_details():
+  name = "Sakshi Dattatray Kumbhar"
+  age = 19
+  address = "Rajwada,Satara"
+
+  print("Name: {}\nAge: {}\nAddress: {}".format(name,age,address))
+
+personal_details()
+
+Output:-
+Name: Sakshi Dattatray Kumbhar
+Age: 19
+Address: Rajwada,Satara
