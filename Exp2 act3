@@ -1,0 +1,10 @@
+age = int(input("Enter your age"))
+
+if age >= 18:
+  print("you are allowed to watch the movie")
+else:
+  print("you are not eligible to watch the movie")
+
+Output:-
+Enter your age20
+you are allowed to watch the movie
