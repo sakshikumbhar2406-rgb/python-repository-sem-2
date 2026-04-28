@@ -1,0 +1,6 @@
+prices = [250, 450, 125, 300]
+total_bill = sum(prices)
+print("Total bill amount: $", total_bill)
+
+Output:-
+Total bill amount: $ 1125
