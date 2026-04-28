@@ -1,0 +1,9 @@
+feedback = "Great service and fast delivery"
+reversed_feedback = feedback[::-1]
+
+print("Original Feedback:", feedback)
+print("Reversed Feedback:", reversed_feedback)
+
+Output:-
+Original Feedback: Great service and fast delivery
+Reversed Feedback: yreviled tsaf dna ecivres taerG
