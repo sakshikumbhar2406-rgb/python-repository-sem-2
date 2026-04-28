@@ -1,0 +1,10 @@
+salary = int(input("Enter your monthly salary:"))
+
+if salary >= 25000:
+    print("loan approved")
+else:
+  print("loan rejected")
+
+Output:-
+Enter your monthly salary:20000
+loan rejected
