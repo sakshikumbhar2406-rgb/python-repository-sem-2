@@ -1,0 +1,14 @@
+balance = 5000
+
+withdraw = int(input("Enter amount to withdraw: "))
+
+if withdraw > balance:
+    print("Insufficient Balance!")
+else:
+    balance -= withdraw
+    print("Withdrawal successful")
+    print("Remaining balance: ", balance)
+
+Output:-
+Enter amount to withdraw: 6000
+Insufficient Balance!
