@@ -1,0 +1,40 @@
+import math
+
+# Take input from the user
+num = float(input("Enter a number for square root and power calculation:"))
+power = float(input("Enter the exponent value:"))
+
+angle_deg = float(input("Enter an angle in degrees for trigonometric functions:"))
+
+#Square root
+sqrt_value = math.sqrt(num)
+print(f"Square root of {num} is {sqrt_value}")
+
+#Power
+power_value = math.pow(num,power)
+print(f"{num} raised to the power {power} is {power_value}")
+
+#Convert angle to radians for trig functions
+angle_rad = math.radians(angle_deg)
+
+#Trigonometric functions
+sin_value = math.sin(angle_rad)
+cos_value = math.cos(angle_rad)
+tan_value = math.tan(angle_rad)
+
+print(f"Sin({angle_deg}o) = {sin_value}")
+print(f"Cos({angle_deg}o) = {cos_value}")
+print(f"Tan({angle_deg}o) = {tan_value}")
+
+Output:-
+
+Enter a number for square root and power calculation:16
+Enter the exponent value:2
+Enter an angle in degrees for trigonometric functions:30
+Square root of 16.0 is 4.0
+16.0 raised to the power 2.0 is 256.0
+Sin(30.0o) = 0.49999999999999994
+Cos(30.0o) = 0.8660254037844387
+Tan(30.0o) = 0.5773502691896257
+
+
